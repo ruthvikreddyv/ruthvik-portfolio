@@ -1,19 +1,77 @@
+import { Reveal } from "@/components/Reveal";
+import { IconDownload, IconEye } from "@/components/icons";
+
+const documents = [
+  {
+    label: "Curriculum Vitae",
+    description: "Full academic CV — research objective, education record, and project supervisors.",
+    file: "/Ruthvik_CV.pdf",
+    primary: true,
+  },
+  {
+    label: "Résumé",
+    description: "One-page summary tailored for software and data roles.",
+    file: "/Ruthvik_Resume.pdf",
+    primary: false,
+  },
+];
+
 export function ResumeSection() {
   return (
-    <section id="resume" className="mx-auto max-w-5xl px-4 py-20 text-center">
-      <div className="max-w-md mx-auto">
-        <h2 className="text-3xl font-bold mb-6">Download Resume</h2>
-        <p className="text-slate-600 dark:text-slate-400 mb-8">Get my complete resume with detailed experience and skills.</p>
-        <a
-          href="/Ruthvik_Resume.pdf"
-          download
-          className="inline-flex items-center gap-3 bg-indigo-600 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-indigo-700 transition-all shadow-lg hover:shadow-xl"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10l-5.5 5.5m0 0L8 18l3.5-3.5M7.5 18l3.5 3.5m5-8l5.5-5.5m0 0L16 8l-3.5 3.5M17.5 8l-3.5-3.5" />
-          </svg>
-          Download Resume (PDF)
-        </a>
+    <section id="resume" className="mx-auto max-w-6xl px-5 md:px-8 py-20 md:py-28 border-t border-line">
+      <Reveal>
+        <p className="eyebrow mb-3 text-center">resume.pdf</p>
+      </Reveal>
+      <Reveal delay={60}>
+        <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-3 text-center">
+          Resume &amp; CV
+        </h2>
+      </Reveal>
+      <Reveal delay={100}>
+        <p className="text-ink-soft text-center max-w-xl mx-auto mb-12">
+          Get the complete picture — detailed experience, research, education, and
+          skills — as a CV or a one-page résumé.
+        </p>
+      </Reveal>
+
+      <div className="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
+        {documents.map((doc, i) => (
+          <Reveal key={doc.file} delay={150 + i * 100}>
+            <div
+              className={`corner-frame h-full rounded-2xl border p-7 flex flex-col ${
+                doc.primary
+                  ? "border-teal/40 bg-teal-tint"
+                  : "border-line bg-surface"
+              }`}
+            >
+              <h3 className="font-display text-xl font-semibold text-ink mb-2">{doc.label}</h3>
+              <p className="text-sm text-ink-soft mb-6 flex-1">{doc.description}</p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={doc.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md border border-line-strong px-4 py-2.5 text-sm font-semibold text-ink hover:border-teal hover:text-teal transition-colors"
+                >
+                  <IconEye className="w-4 h-4" />
+                  View
+                </a>
+                <a
+                  href={doc.file}
+                  download
+                  className={`inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold transition-colors ${
+                    doc.primary
+                      ? "bg-teal text-white hover:bg-teal-strong"
+                      : "bg-ink text-paper hover:bg-teal"
+                  }`}
+                >
+                  <IconDownload className="w-4 h-4" />
+                  Download
+                </a>
+              </div>
+            </div>
+          </Reveal>
+        ))}
       </div>
     </section>
   );

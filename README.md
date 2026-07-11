@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ruthvik Reddy Veerannagari — Portfolio
 
-## Getting Started
+Personal portfolio built with Next.js (App Router), React 19, and Tailwind CSS v4.
 
-First, run the development server:
+## Sections
+
+- **Hero** — introduction, profile photo, quick CTAs
+- **About** — narrative bio and quick facts
+- **Education** — academic record and relevant coursework
+- **Skills** — categorized technical skills and tools
+- **Experience** — timeline of internships/research roles
+- **Projects** — ArchViz-XR, EduChain, LendFundz, ParkEase, Mental Health Detector
+- **Achievements** — publications under review
+- **Certifications** — professional certifications
+- **Resume/CV** — view and download both documents
+- **Contact** — contact details and message form
+
+## Design system
+
+- **Palette**: cool paper/ink neutrals with a circuit-teal primary accent and a muted gold secondary accent (see CSS variables in `app/globals.css`).
+- **Type**: Space Grotesk (display), Inter (body), JetBrains Mono (labels/tags) — loaded via `next/font`.
+- **Motif**: a technical-blueprint aesthetic (grid-paper texture, corner-bracket frames, mono "// eyebrow" labels) reflecting a resume built around architecting, designing schemas, and constructing pipelines.
+- **Dark mode**: class-based, toggled via the header button; preference is persisted to `localStorage` and applied pre-hydration to avoid a flash of the wrong theme.
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Updating content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Resume/CV files live in `public/Ruthvik_Resume.pdf` and `public/Ruthvik_CV.pdf` — replace them (keeping the same filenames) to update the downloadable documents.
+- The profile photo is `public/profile.jpg` — replace with a new image at roughly the same aspect ratio (4:5) to update the hero portrait.
+- Section content (skills, projects, experience, etc.) is defined as plain data arrays at the top of each file in `components/`.
 
-## Learn More
+## Stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js 16](https://nextjs.org) — App Router
+- [React 19](https://react.dev)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- TypeScript
