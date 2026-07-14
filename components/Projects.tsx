@@ -21,7 +21,7 @@ const projects = [
       "Deployed permissioned Ethereum smart contracts for on-chain credential issuance and revocation; integrated IPFS with SHA-256 hashing, making tampering cryptographically detectable.",
       "Exposed a FastAPI verification service and wallet-authenticated Next.js interface via Ethers.js, enabling trustless verification without a centralised intermediary.",
     ],
-    badge: "Published in IJIT 2026 (under review)",
+    // badge: "Published in IJIT 2026 (under review)",
   },
   {
     title: "LendFundz",
