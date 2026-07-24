@@ -7,9 +7,10 @@ import { IconMenu, IconClose } from "@/components/icons";
 const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
+  { href: "#research", label: "Research" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#publications", label: "Publications" },
   { href: "#resume", label: "Resume" },
   { href: "#contact", label: "Contact" },
 ];
@@ -44,8 +45,8 @@ export function Navbar() {
           <span className="hidden sm:inline">Ruthvik Reddy</span>
         </a>
 
-        <div className="flex items-center gap-2 md:gap-6">
-          <div className="hidden md:flex items-center gap-7 text-sm font-medium">
+        <div className="flex items-center gap-2 md:gap-5">
+          <div className="hidden lg:flex items-center gap-6 text-sm font-medium">
             {links.map((link) => (
               <a
                 key={link.href}
@@ -57,14 +58,15 @@ export function Navbar() {
             ))}
           </div>
           <a
-            href="#resume"
+            href="/Ruthvik_CV.pdf"
+            download
             className="hidden md:inline-flex items-center rounded-md bg-ink px-4 py-2 text-sm font-medium text-paper hover:bg-teal transition-colors"
           >
-            View Résumé
+            Download Resume
           </a>
           <ThemeToggle />
           <button
-            className="md:hidden p-2 rounded-md border border-line text-ink-soft hover:text-teal hover:border-teal/50 transition-colors"
+            className="lg:hidden p-2 rounded-md border border-line text-ink-soft hover:text-teal hover:border-teal/50 transition-colors"
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={open}
@@ -75,7 +77,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-line bg-paper/95 backdrop-blur-md">
+        <div className="lg:hidden border-t border-line bg-paper/95 backdrop-blur-md">
           <div className="mx-auto max-w-6xl px-5 py-4 flex flex-col gap-1 text-sm">
             {links.map((link) => (
               <a
@@ -87,6 +89,14 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/Ruthvik_CV.pdf"
+              download
+              className="mt-2 rounded-md bg-ink px-3 py-2.5 text-center font-medium text-paper"
+              onClick={() => setOpen(false)}
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       )}

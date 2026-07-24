@@ -7,9 +7,10 @@ const timeline = [
     date: "Jan 2026 – Present",
     current: true,
     bullets: [
-      "Constructing end-to-end ML pipelines covering ingestion, preprocessing, feature engineering, and cross-validated model training on structured research datasets under faculty supervision.",
-      "Driving systematic hyperparameter optimisation cycles with measurable generalisation gains; findings have contributed to two manuscripts under review at indexed international venues.",
-      "Contributing to literature review, research methodology design, reproducibility analysis, and scientific manuscript preparation.",
+      "Conducting research on AI-driven wireless communication systems, intelligent networking, and multimodal machine learning as part of the NMICPS-funded project on AI/ML-based Network Management and Signal Processing for 5G and Beyond.",
+      "Developing end-to-end ML pipelines involving data preprocessing, feature engineering, model training, hyperparameter optimisation, and reproducible experimental evaluation.",
+      "Implementing and evaluating deep learning, graph neural network, and reinforcement learning models for intelligent resource allocation, signal processing, and wireless communication applications.",
+      "Contributing to scientific publications through literature review, experimental design, quantitative performance analysis, and manuscript preparation for international journals and conferences.",
     ],
   },
   {
@@ -18,10 +19,10 @@ const timeline = [
     date: "Jan 2025 – Jun 2025",
     current: false,
     bullets: [
-      "Architected loan lifecycle modules covering intake, underwriting transitions, and status tracking in Django/PostgreSQL, reducing manual operations overhead across the credit team.",
-      "Delivered OTP-based two-factor authentication and role-scoped session management, satisfying fintech security and audit requirements for production deployment.",
-      "Designed a versioned REST API layer for the Next.js frontend using contract-first development, enabling fully parallel frontend and backend delivery cycles.",
-      "Rebuilt EMI computation as an isolated, parameterised utility library, improving numerical fidelity and reducing regression risk across variable tenures and rate structures.",
+      "Engineered backend modules for loan origination, approval workflows, repayment tracking, and status management using Django and PostgreSQL, improving operational efficiency across the lending platform.",
+      "Implemented secure OTP-based two-factor authentication, role-based access control, and session management to satisfy production security and compliance requirements.",
+      "Designed and developed RESTful APIs for seamless integration with a Next.js frontend, enabling parallel development and scalable client-server communication.",
+      "Built modular EMI calculation and repayment scheduling services supporting multiple loan products while improving maintainability, numerical accuracy, and regression reliability.",
     ],
   },
 ];

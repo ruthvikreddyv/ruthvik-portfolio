@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Reveal } from "@/components/Reveal";
-import { IconArrowUpRight, IconDownload } from "@/components/icons";
+import { IconArrowUpRight, IconDownload, IconMail } from "@/components/icons";
 
-const chips = ["Python", "Django · FastAPI", "Next.js", "Ethereum", "Machine Learning"];
+const chips = ["Graph Neural Networks", "Deep RL", "5G/6G Wireless", "Computer Vision", "Blockchain"];
 
 export function Hero() {
   return (
@@ -13,42 +13,59 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-5 md:px-8 py-20 md:py-28 grid gap-14 md:grid-cols-[1.15fr_0.85fr] md:items-center">
         <div>
           <Reveal>
-            <p className="eyebrow mb-5">software_developer.init()</p>
+            <p className="eyebrow mb-5">researcher.init()</p>
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-semibold tracking-tight leading-[1.08] text-ink">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.2rem] font-semibold tracking-tight leading-[1.08] text-ink">
               Ruthvik Reddy
               <br />
               <span className="text-teal">Veerannagari</span>
             </h1>
           </Reveal>
 
-          <Reveal delay={160}>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Computer Science (Data Science) undergraduate who architects fintech
-              backends, decentralised credential systems, and AI-driven pipelines —
-              currently researching multimodal AI and XR at IIIT Naya Raipur, aiming
-              toward a PhD in Artificial Intelligence.
+          <Reveal delay={140}>
+            <p className="mt-5 font-mono text-sm text-ink-soft">
+              AI Researcher <span className="text-ink-faint">·</span> Software Engineer{" "}
+              <span className="text-ink-faint">·</span> ML Engineer{" "}
+              <span className="text-ink-faint">·</span> Future PhD Researcher
             </p>
           </Reveal>
 
-          <Reveal delay={240}>
+          <Reveal delay={200}>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
+              Computer Science (Data Science) graduate with experience in software
+              engineering, backend development, blockchain, and AI-driven systems.
+              Proficient in Python, Django, FastAPI, PostgreSQL, and modern machine
+              learning frameworks, with hands-on research in computer vision, graph
+              neural networks, reinforcement learning, and extended reality —
+              backed by research manuscripts under review.
+            </p>
+          </Reveal>
+
+          <Reveal delay={260}>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-2 rounded-md bg-teal px-5 py-3 text-sm font-semibold text-white hover:bg-teal-strong transition-colors shadow-sm"
-              >
-                View Projects
-                <IconArrowUpRight className="w-4 h-4" />
-              </a>
               <a
                 href="/Ruthvik_CV.pdf"
                 download
-                className="inline-flex items-center gap-2 rounded-md border border-line-strong px-5 py-3 text-sm font-semibold text-ink hover:border-teal hover:text-teal transition-colors"
+                className="inline-flex items-center gap-2 rounded-md bg-teal px-5 py-3 text-sm font-semibold text-white hover:bg-teal-strong transition-colors shadow-sm"
               >
                 <IconDownload className="w-4 h-4" />
-                Download CV
+                Download Resume
+              </a>
+              <a
+                href="#research"
+                className="inline-flex items-center gap-2 rounded-md border border-line-strong px-5 py-3 text-sm font-semibold text-ink hover:border-teal hover:text-teal transition-colors"
+              >
+                View Research
+                <IconArrowUpRight className="w-4 h-4" />
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 rounded-md border border-line-strong px-5 py-3 text-sm font-semibold text-ink hover:border-teal hover:text-teal transition-colors"
+              >
+                <IconMail className="w-4 h-4" />
+                Contact Me
               </a>
             </div>
           </Reveal>

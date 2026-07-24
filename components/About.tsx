@@ -1,11 +1,11 @@
 import { Reveal } from "@/components/Reveal";
-import { IconPin, IconSparkle, IconBrain, IconAward } from "@/components/icons";
+import { IconPin, IconRadio, IconBrain, IconAward } from "@/components/icons";
 
 const facts = [
   { icon: IconPin, label: "Based in", value: "Hyderabad, India" },
-  { icon: IconBrain, label: "Focus areas", value: "AI/ML · Blockchain · Full-Stack · XR" },
-  { icon: IconSparkle, label: "Currently", value: "Research Intern, IIIT Naya Raipur" },
-  { icon: IconAward, label: "Languages", value: "English, Telugu, Hindi" },
+  { icon: IconRadio, label: "Research focus", value: "AI for Wireless Communications" },
+  { icon: IconBrain, label: "Currently", value: "Research Intern, IIIT Naya Raipur" },
+  { icon: IconAward, label: "Seeking", value: "Fully funded PhD positions" },
 ];
 
 export function About() {
@@ -24,30 +24,29 @@ export function About() {
         <Reveal delay={100}>
           <div className="space-y-5 text-lg leading-relaxed text-ink-soft">
             <p>
-              I&apos;m a Computer Science (Data Science) undergraduate at Chhattisgarh
-              Swami Vivekanand Technical University, and an aspiring researcher working
-              toward a PhD in Artificial Intelligence. My interests sit at the
-              intersection of multimodal AI, knowledge representation, trustworthy
-              intelligent systems, and immersive human-computer interaction — building
-              computational frameworks that bridge perception, reasoning, and
-              interaction.
+              I&apos;m interested in solving real-world problems at the intersection of
+              Artificial Intelligence, Machine Learning, Blockchain, Extended Reality,
+              and Intelligent Wireless Communication. As a Research Intern at IIIT
+              Naya Raipur, I work on a NMICPS-funded project applying AI/ML to network
+              management and signal processing for 5G and beyond — building graph
+              neural network and reinforcement learning models for intelligent
+              resource allocation in next-generation wireless systems.
             </p>
             <p>
-              Most recently, I worked as a Software Developer Intern at Cypwng, where I
-              architected loan-lifecycle modules, delivered OTP-based two-factor
-              authentication, and designed a versioned REST API layer for the LendFundz
-              fintech platform in Django and PostgreSQL. I&apos;m currently a Research
-              Intern at IIIT Naya Raipur, building end-to-end ML pipelines whose
-              findings have contributed to two manuscripts under review at indexed
-              international venues.
+              Alongside research, I bring hands-on software engineering experience:
+              as a Software Developer Intern at Cypwng I built backend systems for a
+              fintech lending platform in Django, FastAPI, and PostgreSQL, with secure
+              OTP authentication and role-based access control. I&apos;ve also built
+              EduChain, a blockchain-based credential verification platform on
+              Ethereum, and ArchViz-XR, an AI-powered XR framework that turns research
+              diagrams into interactive 3D scientific visualisations.
             </p>
             <p>
-              Beyond fintech and applied ML, I build in blockchain — EduChain&apos;s
-              on-chain credential verification — and XR — ArchViz-XR&apos;s
-              semantic-to-spatial visualisation pipeline. I hold certifications from
-              IBM, Microsoft, Walmart, Wells Fargo, Accenture, and Deloitte, and outside
-              of work you&apos;ll find me playing cricket, riding, or in the middle of a
-              hackathon.
+              My work has contributed to research manuscripts under review at
+              international journals and conferences, spanning blockchain systems and
+              graph-learning-based wireless resource allocation. I&apos;m now looking to
+              extend this research trajectory through a PhD focused on AI-driven
+              wireless communications and trustworthy intelligent systems.
             </p>
           </div>
         </Reveal>

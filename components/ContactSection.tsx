@@ -46,8 +46,9 @@ export function ContactSection() {
               Let&apos;s work together
             </h3>
             <p className="text-ink-soft mb-8 leading-relaxed">
-              Open to software engineering, data science, and applied ML roles — and
-              always happy to talk research, fintech, or blockchain systems.
+              Open to PhD opportunities, AI/ML research roles, and software engineering
+              positions — and always happy to talk wireless communications, graph
+              learning, or blockchain systems.
             </p>
             <div className="space-y-4 mb-8">
               {contactItems.map((item) => {
@@ -75,7 +76,7 @@ export function ContactSection() {
                 );
               })}
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 mb-10">
               {socials.map((s) => (
                 <a
                   key={s.label}
@@ -88,6 +89,17 @@ export function ContactSection() {
                   <s.icon className="w-5 h-5" />
                 </a>
               ))}
+            </div>
+
+            <div className="corner-frame rounded-xl border border-line bg-surface p-5">
+              <p className="eyebrow mb-3">github_activity</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://ghchart.rshah.org/0b7285/ruthvikreddyv"
+                alt="Ruthvik Reddy Veerannagari's GitHub contribution graph"
+                className="w-full rounded-md"
+                loading="lazy"
+              />
             </div>
           </div>
         </Reveal>

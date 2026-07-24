@@ -28,16 +28,17 @@ const coursework = [
   "Pattern Recognition",
   "Natural Language Processing",
   "Computer Vision",
+  "Intelligent Data Analysis",
   "Big Data Analytics",
   "Data Wrangling",
-  "Probability & Statistics",
-  "DBMS",
-  "Algorithm Design & Analysis",
+  "Cloud Computing",
+  "Database Management Systems",
   "Computer Networks",
+  "Cryptography & Network Security",
+  "Algorithm Design & Analysis",
+  "Theory of Computation",
   "Operating Systems",
   "Software Engineering",
-  "Cryptography & Network Security",
-  "Theory of Computation",
 ];
 
 export function Education() {

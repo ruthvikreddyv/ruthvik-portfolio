@@ -16,7 +16,6 @@ export function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    // Reserve the button's footprint to avoid layout shift before hydration.
     return <div className="h-9 w-9" aria-hidden="true" />;
   }
 

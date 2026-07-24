@@ -17,6 +17,8 @@
   --teal-tint: #e3f3f5;
   --gold: #a86c0d;
   --gold-tint: #faf0da;
+  --violet: #6d4fc0;
+  --violet-tint: #efe9fb;
   --grid-line: rgba(16, 21, 28, 0.055);
 }
 
@@ -34,6 +36,8 @@
   --teal-tint: rgba(52, 216, 209, 0.1);
   --gold: #e4ab41;
   --gold-tint: rgba(228, 171, 65, 0.1);
+  --violet: #a98cf0;
+  --violet-tint: rgba(169, 140, 240, 0.12);
   --grid-line: rgba(255, 255, 255, 0.05);
 }
 
@@ -51,6 +55,8 @@
   --color-teal-tint: var(--teal-tint);
   --color-gold: var(--gold);
   --color-gold-tint: var(--gold-tint);
+  --color-violet: var(--violet);
+  --color-violet-tint: var(--violet-tint);
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
@@ -71,7 +77,6 @@ body {
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Anchor offset so the sticky navbar doesn't cover section headings */
 section[id] {
   scroll-margin-top: 5rem;
 }
@@ -87,7 +92,6 @@ section[id] {
   border-radius: 2px;
 }
 
-/* Blueprint / schematic grid-paper texture, used behind the hero and section dividers */
 .grid-texture {
   background-image:
     linear-gradient(var(--grid-line) 1px, transparent 1px),
@@ -95,16 +99,6 @@ section[id] {
   background-size: 32px 32px;
 }
 
-.grid-texture-dense {
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 16px 16px;
-}
-
-/* Corner-bracket registration marks: a recurring signature motif echoing
-   technical/architectural drafting, tying to a resume full of words like
-   "architected", "designed schema", "constructed pipeline". */
 .corner-frame {
   position: relative;
 }
@@ -132,7 +126,6 @@ section[id] {
   border-right: 2px solid var(--teal);
 }
 
-/* Mono "eyebrow" label used above section headings, prefixed like a code comment */
 .eyebrow {
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 0.75rem;
@@ -147,7 +140,6 @@ section[id] {
   color: var(--ink-faint);
 }
 
-/* Reveal-on-scroll utility, paired with the Reveal client component */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -159,6 +151,28 @@ section[id] {
   transform: translateY(0);
 }
 
+/* Animated skill bar: fills from 0 to its target width once visible */
+.skill-bar-track {
+  position: relative;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--teal), var(--violet));
+  transition: width 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-bar-fill.is-visible {
+  width: var(--fill, 0%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -168,9 +182,11 @@ section[id] {
     transform: none;
     transition: none;
   }
+  .skill-bar-fill {
+    transition: none;
+  }
 }
 
-/* Custom scrollbar, subtle */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;

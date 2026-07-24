@@ -1,112 +1,174 @@
+"use client";
+
+import { useState } from "react";
+import type { SVGProps, ReactElement } from "react";
 import { Reveal } from "@/components/Reveal";
-import { IconGithub } from "@/components/icons";
+import { IconGithub, IconFilter } from "@/components/icons";
+import {
+  IconGoggles,
+  IconRadio,
+  IconChain,
+  IconServer,
+  IconBrain,
+} from "@/components/icons";
 
-const featured = {
-  title: "ArchViz-XR",
-  subtitle: "AI-Powered XR Framework for Scientific Knowledge Visualisation",
-  tech: ["NLP", "Computer Vision", "Scene Graphs", "XR/AR", "Transformers"],
-  bullets: [
-    "Designed an automated semantic-to-spatial XR compilation pipeline that ingests research paper diagrams, extracts entity relationships via NLP and computer vision, constructs scene graphs, and renders interactive 3D AR experiences — eliminating manual AR content authoring.",
-    "Prototyped Transformer architecture visualisation: scan a diagram and explore animated component flows, AI-generated explanations, voice interaction, and adaptive learning overlays in real time.",
-  ],
-};
+type Category = "All" | "AI/ML" | "Wireless" | "Blockchain" | "XR" | "Web";
 
-const projects = [
+interface Project {
+  title: string;
+  subtitle: string;
+  categories: Category[];
+  supervisor?: string;
+  tech: string[];
+  bullets: string[];
+  badge?: string;
+  featured?: boolean;
+  icon: (props: SVGProps<SVGSVGElement>) => ReactElement;
+}
+
+const projects: Project[] = [
+  {
+    title: "ArchViz-XR",
+    subtitle: "AI-Powered XR Framework for Scientific Knowledge Visualisation",
+    categories: ["XR", "AI/ML"],
+    icon: IconGoggles,
+    tech: ["NLP", "Computer Vision", "Scene Graphs", "XR/AR", "Voice Interaction"],
+    bullets: [
+      "Designed an automated semantic-to-spatial XR compilation pipeline that transforms research paper diagrams into immersive 3D AR experiences using NLP, computer vision, and scene graph generation.",
+      "Developed multimodal AI modules for entity extraction, relationship reasoning, spatial scene construction, and adaptive content generation, eliminating manual AR authoring.",
+      "Implemented interactive visualisation with AI-generated explanations, voice interaction, and real-time exploration of Transformer architectures and scientific workflows.",
+    ],
+    badge: "Draft manuscript",
+    featured: true,
+  },
+  {
+    title: "GNN-DRL & GNN-SPN",
+    subtitle: "AI-Based Resource Allocation for V2X Networks",
+    categories: ["Wireless", "AI/ML"],
+    supervisor: "Prof. Rajarshi Mahapatra",
+    icon: IconRadio,
+    tech: ["Graph Neural Networks", "Deep RL", "TensorFlow", "V2X", "6G"],
+    bullets: [
+      "Implemented Graph Neural Network-integrated Deep Reinforcement Learning (GNN-DRL) and GNN with Successive Policy Networks (GNN-SPN) for dynamic radio resource allocation in high-mobility V2X communication networks.",
+      "Evaluated performance under varying vehicle densities using V2I throughput, latency, interference management, packet delivery ratio, and reliability metrics.",
+      "Conducted comparative analysis against conventional DRL approaches, demonstrating improved spectrum utilisation, network stability, and communication efficiency through graph-based learning.",
+    ],
+    badge: "Under review — IEEE ANTS 2026",
+    featured: true,
+  },
   {
     title: "EduChain",
-    subtitle: "Decentralised Academic Credential Verification Platform",
+    subtitle: "Blockchain-Based Academic Credential Verification",
+    categories: ["Blockchain", "Web"],
     supervisor: "Mrs. Divya Shukla",
-    tech: ["Ethereum", "Solidity", "IPFS", "FastAPI", "Next.js", "Ethers.js"],
+    icon: IconChain,
+    tech: ["Ethereum", "Solidity", "Hardhat", "IPFS", "FastAPI", "Next.js"],
     bullets: [
-      "Deployed permissioned Ethereum smart contracts for on-chain credential issuance and revocation; integrated IPFS with SHA-256 hashing, making tampering cryptographically detectable.",
-      "Exposed a FastAPI verification service and wallet-authenticated Next.js interface via Ethers.js, enabling trustless verification without a centralised intermediary.",
+      "Developed a blockchain-based credential verification platform using Ethereum smart contracts for secure certificate issuance, verification, and revocation.",
+      "Integrated IPFS with SHA-256 cryptographic hashing to provide tamper-evident storage while enabling decentralised document retrieval.",
+      "Built a FastAPI backend with a wallet-authenticated Next.js frontend using Ethers.js, enabling trustless verification without centralised intermediaries.",
     ],
-    // badge: "Published in IJIT 2026 (under review)",
+    badge: "Under review — Computer Networks",
   },
   {
     title: "LendFundz",
-    subtitle: "Financial Management & Loan Workflow Automation",
+    subtitle: "Loan Management & Financial Workflow Automation Platform",
+    categories: ["Web"],
     supervisor: "Dr. Nachiket Tapas",
-    tech: ["Django", "PostgreSQL", "REST API", "JWT"],
+    icon: IconServer,
+    tech: ["Django", "PostgreSQL", "REST API", "OTP Auth"],
     bullets: [
-      "Normalised PostgreSQL schema for loan applications, amortisation-accurate repayment schedules, and privilege-segregated access across borrower, reviewer, and admin roles.",
-      "Automated EMI computation and repayment schedule generation, reducing manual processing errors.",
+      "Developed a fintech platform supporting end-to-end loan lifecycle management, approval workflows, EMI computation, and repayment tracking.",
+      "Built scalable backend services using Django and PostgreSQL with REST APIs for seamless frontend integration.",
+      "Implemented OTP-based authentication, role-based access control, and secure session management for financial applications.",
     ],
   },
   {
     title: "ParkEase",
     subtitle: "Real-Time Smart Parking Allocation System",
-    supervisor: "Dr. Nachiket Tapas",
-    tech: ["Python", "Concurrency Control", "Distributed Systems"],
+    categories: ["AI/ML", "Web"],
+    supervisor: "Mr. Abhinaw Jagtap",
+    icon: IconServer,
+    tech: ["Computer Vision", "OpenCV", "Concurrency Control"],
     bullets: [
-      "Built a backend locking strategy for concurrent slot reservations that eliminates double-booking under simultaneous request loads.",
-      "Applied distributed-systems principles to support scalable smart-city transportation solutions.",
+      "Developed a computer vision-based smart parking system for real-time parking space detection and reservation management.",
+      "Implemented concurrency control mechanisms to prevent duplicate reservations and ensure data consistency.",
+      "Designed automated parking allocation and live slot availability monitoring for smart-city applications.",
     ],
   },
   {
     title: "Mental Health Detector",
     subtitle: "Journal Sentiment Analysis Application",
+    categories: ["AI/ML"],
     supervisor: "Mr. Ramakant Ganjeshwar",
+    icon: IconBrain,
     tech: ["NLP", "Machine Learning", "Matplotlib"],
     bullets: [
-      "Built a supervised text classification pipeline over personal journal entries for emotional and behavioural pattern monitoring.",
-      "Designed Matplotlib mood-trajectory dashboards to visualise longitudinal emotional trends.",
+      "Developed an AI-driven sentiment analysis application to monitor emotional and behavioural patterns from personal journal entries.",
+      "Applied NLP techniques for text preprocessing, feature extraction, and sentiment classification.",
+      "Built visualisation dashboards to track longitudinal mood trends and behavioural changes.",
     ],
   },
 ];
 
+const filters: Category[] = ["All", "AI/ML", "Wireless", "Blockchain", "XR", "Web"];
+
 export function Projects() {
+  const [active, setActive] = useState<Category>("All");
+  const visible = projects.filter((p) => active === "All" || p.categories.includes(active));
+
   return (
     <section id="projects" className="mx-auto max-w-6xl px-5 md:px-8 py-20 md:py-28 border-t border-line">
       <Reveal>
         <p className="eyebrow mb-3">projects.list()</p>
       </Reveal>
       <Reveal delay={60}>
-        <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-12">
+        <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-8">
           Projects
         </h2>
       </Reveal>
 
-      {/* Featured project */}
       <Reveal delay={100}>
-        <div className="corner-frame group relative rounded-2xl border border-line bg-gradient-to-br from-surface to-surface-2 p-8 md:p-10 mb-6 hover:border-teal/40 transition-colors">
-          <span className="eyebrow mb-4 inline-block">flagship_project</span>
-          <h3 className="font-display text-2xl md:text-3xl font-semibold text-ink mb-1">
-            {featured.title}
-          </h3>
-          <p className="text-teal font-medium mb-5">{featured.subtitle}</p>
-          <ul className="space-y-3 mb-6 max-w-3xl">
-            {featured.bullets.map((b) => (
-              <li key={b} className="flex gap-2.5 text-ink-soft leading-relaxed">
-                <span className="mt-2.5 h-1 w-1 flex-none rounded-full bg-teal" />
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="flex flex-wrap gap-2">
-            {featured.tech.map((t) => (
-              <span
-                key={t}
-                className="rounded-full bg-surface px-3 py-1 font-mono text-xs text-ink-soft border border-line"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
+        <div className="mb-10 flex flex-wrap items-center gap-2">
+          <span className="mr-1 flex items-center gap-1.5 text-xs font-mono text-ink-faint">
+            <IconFilter className="w-3.5 h-3.5" />
+            filter:
+          </span>
+          {filters.map((f) => (
+            <button
+              key={f}
+              onClick={() => setActive(f)}
+              className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                active === f
+                  ? "bg-teal text-white"
+                  : "border border-line text-ink-soft hover:border-teal hover:text-teal"
+              }`}
+            >
+              {f}
+            </button>
+          ))}
         </div>
       </Reveal>
 
-      {/* Rest of the grid */}
       <div className="grid gap-6 sm:grid-cols-2">
-        {projects.map((p, i) => (
-          <Reveal key={p.title} delay={160 + i * 80}>
-            <div className="group flex h-full flex-col rounded-xl border border-line bg-surface p-7 hover:-translate-y-1 hover:border-teal/40 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 flex items-start justify-between gap-3">
+        {visible.map((p, i) => (
+          <Reveal key={p.title} delay={100 + i * 70}>
+            <div
+              className={`group flex h-full flex-col rounded-xl border p-7 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ${
+                p.featured
+                  ? "border-teal/30 bg-gradient-to-br from-surface to-teal-tint"
+                  : "border-line bg-surface hover:border-teal/40"
+              }`}
+            >
+              <div className="mb-4 flex items-start gap-3">
+                <span className="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-teal-tint text-teal">
+                  <p.icon className="w-5 h-5" />
+                </span>
                 <div>
                   <h3 className="font-display text-xl font-semibold text-ink group-hover:text-teal transition-colors">
                     {p.title}
                   </h3>
-                  <p className="text-sm text-ink-soft mt-1">{p.subtitle}</p>
+                  <p className="text-sm text-ink-soft mt-0.5">{p.subtitle}</p>
                 </div>
               </div>
 
@@ -125,19 +187,19 @@ export function Projects() {
                 </span>
               )}
 
-              <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-line">
-                <div className="flex flex-wrap gap-2">
-                  {p.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-full bg-surface-2 px-2.5 py-1 font-mono text-[11px] text-ink-soft"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
+              <div className="mt-auto flex flex-wrap gap-2 pt-4 border-t border-line">
+                {p.tech.map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full bg-surface-2 px-2.5 py-1 font-mono text-[11px] text-ink-soft"
+                  >
+                    {t}
+                  </span>
+                ))}
               </div>
-              <p className="mt-3 text-xs text-ink-faint">Supervisor: {p.supervisor}</p>
+              {p.supervisor && (
+                <p className="mt-3 text-xs text-ink-faint">Supervisor: {p.supervisor}</p>
+              )}
             </div>
           </Reveal>
         ))}

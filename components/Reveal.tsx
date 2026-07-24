@@ -8,11 +8,6 @@ interface RevealProps {
   className?: string;
 }
 
-/**
- * Fades and slides content up as it enters the viewport.
- * Falls back to fully visible immediately if IntersectionObserver
- * is unavailable, and respects prefers-reduced-motion via CSS.
- */
 export function Reveal({ children, delay = 0, className = "" }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);

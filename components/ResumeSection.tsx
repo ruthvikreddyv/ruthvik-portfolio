@@ -10,7 +10,7 @@ const documents = [
   },
   {
     label: "Résumé",
-    description: "One-page summary tailored for software and data roles.",
+    description: "One-page summary tailored for AI research and software engineering roles.",
     file: "/Ruthvik_Resume.pdf",
     primary: false,
   },
@@ -29,8 +29,8 @@ export function ResumeSection() {
       </Reveal>
       <Reveal delay={100}>
         <p className="text-ink-soft text-center max-w-xl mx-auto mb-12">
-          Get the complete picture — detailed experience, research, education, and
-          skills — as a CV or a one-page résumé.
+          ATS-friendly, keyword-rich documents — download either as a CV or a
+          one-page résumé.
         </p>
       </Reveal>
 
@@ -39,9 +39,7 @@ export function ResumeSection() {
           <Reveal key={doc.file} delay={150 + i * 100}>
             <div
               className={`corner-frame h-full rounded-2xl border p-7 flex flex-col ${
-                doc.primary
-                  ? "border-teal/40 bg-teal-tint"
-                  : "border-line bg-surface"
+                doc.primary ? "border-teal/40 bg-teal-tint" : "border-line bg-surface"
               }`}
             >
               <h3 className="font-display text-xl font-semibold text-ink mb-2">{doc.label}</h3>
