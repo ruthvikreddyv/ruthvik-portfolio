@@ -88,7 +88,7 @@ export function Hero() {
             <div className="corner-frame relative rounded-2xl bg-surface p-3 shadow-xl shadow-black/5 border border-line">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
                 <Image
-                  src="/profile.jpg"
+                  src="/profile.png"
                   alt="Portrait of Ruthvik Reddy Veerannagari"
                   fill
                   sizes="(min-width: 768px) 320px, 320px"
