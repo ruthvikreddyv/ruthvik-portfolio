@@ -45,7 +45,7 @@ export function Hero() {
           <Reveal delay={260}>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="/Ruthvik_CV.pdf"
+                href="/Ruthvik_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 rounded-md bg-teal px-5 py-3 text-sm font-semibold text-white hover:bg-teal-strong transition-colors shadow-sm"
               >
@@ -88,7 +88,7 @@ export function Hero() {
             <div className="corner-frame relative rounded-2xl bg-surface p-3 shadow-xl shadow-black/5 border border-line">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl">
                 <Image
-                  src="/profile.png"
+                  src="/profile.jpg"
                   alt="Portrait of Ruthvik Reddy Veerannagari"
                   fill
                   sizes="(min-width: 768px) 320px, 320px"

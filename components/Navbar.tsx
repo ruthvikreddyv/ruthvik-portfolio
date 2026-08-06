@@ -61,7 +61,7 @@ export function Navbar() {
             download
             className="hidden md:inline-flex items-center rounded-md bg-ink px-4 py-2 text-sm font-medium text-paper hover:bg-teal transition-colors"
           >
-            Download Resume
+            Download CV
           </a>
           <ThemeToggle />
           <button

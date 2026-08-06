@@ -29,8 +29,8 @@ export function ResumeSection() {
       </Reveal>
       <Reveal delay={100}>
         <p className="text-ink-soft text-center max-w-xl mx-auto mb-12">
-          ATS-friendly, keyword-rich documents — download either as a CV or a
-          one-page résumé.
+          Explore my academic and professional journey through my Curriculum Vitae and
+          résumé.
         </p>
       </Reveal>
 
