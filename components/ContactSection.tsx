@@ -46,9 +46,9 @@ export function ContactSection() {
               Let&apos;s work together
             </h3>
             <p className="text-ink-soft mb-8 leading-relaxed">
-              Open to PhD opportunities, AI/ML research roles, and software engineering
-              positions — and always happy to talk wireless communications, graph
-              learning, or blockchain systems.
+              Open to software engineering roles, AI/ML positions, research
+              internships, and graduate study (Master&apos;s or PhD) — and always happy
+              to talk backend systems, applied ML, or blockchain.
             </p>
             <div className="space-y-4 mb-8">
               {contactItems.map((item) => {

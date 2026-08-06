@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Reveal } from "@/components/Reveal";
 import { IconArrowUpRight, IconDownload, IconMail } from "@/components/icons";
 
-const chips = ["Graph Neural Networks", "Deep RL", "5G/6G Wireless", "Computer Vision", "Blockchain"];
+const chips = ["Python · Django · FastAPI", "Machine Learning", "Graph Neural Networks", "Wireless Systems", "Blockchain"];
 
 export function Hero() {
   return (
@@ -13,7 +13,7 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-5 md:px-8 py-20 md:py-28 grid gap-14 md:grid-cols-[1.15fr_0.85fr] md:items-center">
         <div>
           <Reveal>
-            <p className="eyebrow mb-5">researcher.init()</p>
+            <p className="eyebrow mb-5">engineer.init()</p>
           </Reveal>
 
           <Reveal delay={80}>
@@ -26,20 +26,19 @@ export function Hero() {
 
           <Reveal delay={140}>
             <p className="mt-5 font-mono text-sm text-ink-soft">
-              AI Researcher <span className="text-ink-faint">·</span> Software Engineer{" "}
-              <span className="text-ink-faint">·</span> ML Engineer{" "}
-              <span className="text-ink-faint">·</span> Future PhD Researcher
+              Software Engineer <span className="text-ink-faint">·</span> AI/ML Engineer{" "}
+              <span className="text-ink-faint">·</span> Computer Science Researcher
             </p>
           </Reveal>
 
           <Reveal delay={200}>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Computer Science (Data Science) graduate with experience in software
-              engineering, backend development, blockchain, and AI-driven systems.
-              Proficient in Python, Django, FastAPI, PostgreSQL, and modern machine
-              learning frameworks, with hands-on research in computer vision, graph
-              neural networks, reinforcement learning, and extended reality —
-              backed by research manuscripts under review.
+              Computer Science (Data Science) graduate with a strong foundation in
+              software engineering, backend development, and applied AI/ML — from
+              building production fintech and blockchain systems to researching
+              computer vision, graph neural networks, and reinforcement learning,
+              including applications in wireless communications. Backed by research
+              manuscripts under review.
             </p>
           </Reveal>
 

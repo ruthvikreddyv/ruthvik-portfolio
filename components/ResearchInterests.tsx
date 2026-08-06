@@ -2,20 +2,20 @@ import { Reveal } from "@/components/Reveal";
 import { IconRadio, IconBrain, IconNetwork, IconGoggles, IconChain, IconTarget } from "@/components/icons";
 
 const interests = [
-  { icon: IconRadio, label: "5G/6G Wireless Communications" },
-  { icon: IconBrain, label: "Machine Learning for Wireless Networks" },
   { icon: IconBrain, label: "Artificial Intelligence" },
-  { icon: IconNetwork, label: "Graph Neural Networks" },
-  { icon: IconTarget, label: "Deep Reinforcement Learning" },
-  { icon: IconNetwork, label: "Internet of Things" },
-  { icon: IconRadio, label: "Physical Layer Security" },
-  { icon: IconTarget, label: "Wireless Resource Allocation" },
-  { icon: IconNetwork, label: "Intelligent Network Management" },
   { icon: IconBrain, label: "Computer Vision" },
   { icon: IconBrain, label: "Natural Language Processing" },
+  { icon: IconNetwork, label: "Graph Neural Networks" },
+  { icon: IconTarget, label: "Deep Reinforcement Learning" },
   { icon: IconGoggles, label: "Extended Reality" },
   { icon: IconChain, label: "Blockchain Systems" },
   { icon: IconNetwork, label: "Edge Intelligence" },
+  { icon: IconBrain, label: "Machine Learning for Wireless Networks" },
+  { icon: IconRadio, label: "5G/6G Wireless Communications" },
+  { icon: IconTarget, label: "Wireless Resource Allocation" },
+  { icon: IconNetwork, label: "Internet of Things" },
+  { icon: IconRadio, label: "Physical Layer Security" },
+  { icon: IconNetwork, label: "Intelligent Network Management" },
 ];
 
 export function ResearchInterests() {
@@ -42,19 +42,6 @@ export function ResearchInterests() {
           </Reveal>
         ))}
       </div>
-
-      <Reveal delay={200}>
-        <div className="corner-frame mt-8 rounded-2xl border border-teal/30 bg-teal-tint p-7">
-          <p className="text-ink font-medium leading-relaxed">
-            I am actively seeking fully funded PhD opportunities in Artificial
-            Intelligence and Wireless Communications, with research interests in 5G/6G
-            wireless communication systems, machine learning for wireless networks,
-            IoT and intelligent edge computing, physical layer security, and wireless
-            resource allocation using graph neural networks and reinforcement
-            learning.
-          </p>
-        </div>
-      </Reveal>
     </section>
   );
 }

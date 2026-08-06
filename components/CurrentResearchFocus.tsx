@@ -73,11 +73,12 @@ export function CurrentResearchFocus() {
         <div className="corner-frame mt-8 rounded-2xl border border-line bg-surface p-7">
           <p className="text-ink-soft leading-relaxed">
             <span className="font-display font-semibold text-ink">
-              I am actively seeking fully funded PhD opportunities
+              This work sits at the intersection of engineering and research
             </span>{" "}
-            in Artificial Intelligence, Machine Learning, Wireless Communications, and
-            Intelligent Network Systems, with interests in developing next-generation
-            AI-driven communication technologies and trustworthy intelligent systems.
+            for me, and I&apos;m open to continuing it through software engineering
+            roles, applied AI/ML positions, research internships, or graduate study
+            (Master&apos;s or PhD) — building next-generation intelligent systems,
+            wherever that path leads.
           </p>
         </div>
       </Reveal>

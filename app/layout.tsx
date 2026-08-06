@@ -22,9 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 const siteUrl = "https://ruthvik-portfolio-gules.vercel.app";
 const title =
-  "Ruthvik Reddy Veerannagari — AI Researcher, Software Engineer & Future PhD Researcher";
+  "Ruthvik Reddy Veerannagari — Software Engineer & AI/ML Researcher";
 const description =
-  "Computer Science (Data Science) graduate researching AI-driven wireless communications, graph neural networks, and extended reality at IIIT Naya Raipur. Software engineer experienced in Django, FastAPI, and blockchain systems, seeking fully funded PhD opportunities in AI and Wireless Communications.";
+  "Computer Science graduate with a strong foundation in software engineering, backend development, and applied AI/ML — from full-stack and blockchain systems to research in computer vision, graph neural networks, and wireless communications at IIIT Naya Raipur. Open to software engineering roles, AI/ML positions, research internships, and graduate study.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "Ruthvik Reddy Veerannagari",
-    "AI Researcher",
-    "Machine Learning Engineer",
     "Software Engineer",
-    "PhD Wireless Communications",
+    "AI/ML Engineer",
+    "Machine Learning Engineer",
+    "Computer Science Researcher",
     "Graph Neural Networks",
     "Deep Reinforcement Learning",
-    "5G 6G Research",
+    "Wireless Communications Research",
     "Blockchain Developer",
-    "Extended Reality Research",
+    "Full-Stack Developer",
   ],
   authors: [{ name: "Ruthvik Reddy Veerannagari", url: siteUrl }],
   robots: { index: true, follow: true },
@@ -66,7 +66,7 @@ const jsonLd = {
   name: "Ruthvik Reddy Veerannagari",
   url: siteUrl,
   image: `${siteUrl}/profile.jpg`,
-  jobTitle: "AI Researcher & Software Engineer",
+  jobTitle: "Software Engineer & AI/ML Researcher",
   description,
   email: "mailto:ruthvikreddyv@gmail.com",
   sameAs: [

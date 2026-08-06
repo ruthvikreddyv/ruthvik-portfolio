@@ -1,11 +1,11 @@
 import { Reveal } from "@/components/Reveal";
-import { IconPin, IconRadio, IconBrain, IconAward } from "@/components/icons";
+import { IconPin, IconCode, IconBrain, IconTarget } from "@/components/icons";
 
 const facts = [
   { icon: IconPin, label: "Based in", value: "Hyderabad, India" },
-  { icon: IconRadio, label: "Research focus", value: "AI for Wireless Communications" },
+  { icon: IconCode, label: "Core strengths", value: "Software Engineering · AI/ML" },
   { icon: IconBrain, label: "Currently", value: "Research Intern, IIIT Naya Raipur" },
-  { icon: IconAward, label: "Seeking", value: "Fully funded PhD positions" },
+  { icon: IconTarget, label: "Open to", value: "SWE · AI/ML · Research · Grad School" },
 ];
 
 export function About() {
@@ -24,29 +24,31 @@ export function About() {
         <Reveal delay={100}>
           <div className="space-y-5 text-lg leading-relaxed text-ink-soft">
             <p>
-              I&apos;m interested in solving real-world problems at the intersection of
-              Artificial Intelligence, Machine Learning, Blockchain, Extended Reality,
-              and Intelligent Wireless Communication. As a Research Intern at IIIT
-              Naya Raipur, I work on a NMICPS-funded project applying AI/ML to network
-              management and signal processing for 5G and beyond — building graph
-              neural network and reinforcement learning models for intelligent
-              resource allocation in next-generation wireless systems.
+              I&apos;m a Computer Science graduate who enjoys building real software as
+              much as researching how to make it smarter — spanning backend
+              engineering, applied machine learning, blockchain, and extended
+              reality. As a Research Intern at IIIT Naya Raipur, I also work on a
+              NMICPS-funded project applying AI/ML to network management and signal
+              processing for 5G and beyond, including graph neural network and
+              reinforcement learning models for wireless resource allocation.
             </p>
             <p>
-              Alongside research, I bring hands-on software engineering experience:
-              as a Software Developer Intern at Cypwng I built backend systems for a
-              fintech lending platform in Django, FastAPI, and PostgreSQL, with secure
-              OTP authentication and role-based access control. I&apos;ve also built
-              EduChain, a blockchain-based credential verification platform on
-              Ethereum, and ArchViz-XR, an AI-powered XR framework that turns research
-              diagrams into interactive 3D scientific visualisations.
+              On the engineering side, I bring hands-on software development
+              experience: as a Software Developer Intern at Cypwng I built backend
+              systems for a fintech lending platform in Django, FastAPI, and
+              PostgreSQL, with secure OTP authentication and role-based access
+              control. I&apos;ve also built EduChain, a blockchain-based credential
+              verification platform on Ethereum, and ArchViz-XR, an AI-powered XR
+              framework that turns research diagrams into interactive 3D scientific
+              visualisations.
             </p>
             <p>
               My work has contributed to research manuscripts under review at
               international journals and conferences, spanning blockchain systems and
-              graph-learning-based wireless resource allocation. I&apos;m now looking to
-              extend this research trajectory through a PhD focused on AI-driven
-              wireless communications and trustworthy intelligent systems.
+              graph-learning-based wireless resource allocation. I&apos;m open to
+              opportunities that let me keep building at this intersection — whether
+              that&apos;s a software engineering role, an AI/ML position, a research
+              internship, or graduate study.
             </p>
           </div>
         </Reveal>
