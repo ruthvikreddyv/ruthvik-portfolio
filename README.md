@@ -1,57 +1,229 @@
-# Ruthvik Reddy Veerannagari — Portfolio
+# Ruthvik Reddy Veerannagari
 
-Personal portfolio built with Next.js (App Router), React 19, and Tailwind CSS v4.
-Positioned for PhD admissions, AI/ML research roles, and software engineering roles.
+## Computer Science | Artificial Intelligence | Machine Learning | Research
 
-## Sections
+I am a Computer Science Engineering (Data Science) graduate with research and software development experience in Artificial Intelligence, Machine Learning, Computer Vision, Graph Neural Networks, Wireless Communication Systems, Extended Reality, and Blockchain.
 
-- **Hero** — headline, profile photo, Download Resume / View Research / Contact CTAs
-- **About** — research-focused narrative (AI, wireless comms, blockchain, XR)
-- **Research Interests** — tag grid + "seeking fully funded PhD" statement
-- **Current Research Focus** — ongoing research directions (5G/6G AI, graph learning, XR, blockchain trust systems)
-- **Education** — academic record and relevant coursework
-- **Skills** — categorized tags + animated skill-level bars
-- **Experience** — Research Intern (IIIT Naya Raipur, NMICPS-funded project) and Software Developer Intern (Cypwng)
-- **Projects** — filterable grid: ArchViz-XR, GNN-DRL & GNN-SPN, EduChain, LendFundz, ParkEase, Mental Health Detector
-- **Publications** — 3 manuscripts (under review / draft) with venue and status
-- **Certifications**
-- **Resume/CV** — view and download both documents
-- **Contact** — contact details, message form, live GitHub contribution graph
+I am interested in developing intelligent systems that combine machine learning, graph learning, multimodal AI, and emerging technologies to solve real-world problems.
 
-## Design system
+Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing to research in AI-driven wireless communication systems, intelligent networking, and multimodal machine learning.
 
-- **Palette**: cool paper/ink neutrals, circuit-teal primary accent, muted gold (publication status) and violet (draft status) secondary accents — see `app/globals.css`.
-- **Type**: Space Grotesk (display), Inter (body), JetBrains Mono (labels/tags) via `next/font`.
-- **Motif**: technical-blueprint aesthetic (grid-paper texture, corner-bracket frames, mono `// eyebrow` labels).
-- **Dark mode**: class-based, toggled via the header button, persisted to `localStorage`, applied pre-hydration to avoid a flash of the wrong theme.
-- **Animations**: scroll-reveal (`components/Reveal.tsx`) and animated skill bars (`components/SkillBar.tsx`), both via `IntersectionObserver` — no animation library dependency.
+## Research Interests
 
-## SEO
+* Artificial Intelligence and Machine Learning
+* Graph Neural Networks
+* Deep Reinforcement Learning
+* 5G/6G Wireless Communication
+* AI for Wireless Networks
+* V2X Communication
+* Intelligent Resource Allocation
+* Computer Vision
+* Natural Language Processing
+* Multimodal AI
+* Extended Reality
+* Trustworthy AI
+* Intelligent Edge Computing
+* Blockchain Applications
 
-- Full metadata, Open Graph, and Twitter card tags in `app/layout.tsx`.
-- JSON-LD `Person` structured data (name, affiliation, `knowsAbout`, social links) for richer search results.
-- Semantic headings and `alt` text throughout for accessibility and search.
+## Technical Skills
 
-## Getting started
+### Programming Languages
 
-```bash
-npm install
-npm run dev
-```
+* Python
+* C
+* C++
+* SQL
 
-Open [http://localhost:3000](http://localhost:3000) to view it locally.
+### AI and Machine Learning
 
-## Updating content
+* Machine Learning
+* Deep Learning
+* Graph Neural Networks
+* Deep Reinforcement Learning
+* Natural Language Processing
+* Computer Vision
+* Feature Engineering
+* Model Evaluation
+* Hyperparameter Optimization
 
-- Resume/CV files live in `public/Ruthvik_Resume.pdf` and `public/Ruthvik_CV.pdf` — replace them (keeping the same filenames) to update the downloadable documents.
-- The profile photo is `public/profile.jpg` — replace with a new image at roughly the same aspect ratio (4:5) to update the hero portrait.
-- Section content (skills, projects, publications, research interests, etc.) is defined as plain data arrays at the top of each file in `components/`.
-- Project cards currently use icon-based visual headers rather than screenshots, since no project screenshots or live demo URLs were available — add `image`/`demoUrl` fields to the `projects` array in `components/Projects.tsx` and render them if/when you have real assets.
-- The GitHub contribution graph in the Contact section pulls live from `ghchart.rshah.org` using the `ruthvikreddyv` GitHub username — update the username in `components/ContactSection.tsx` if it ever changes.
+### Frameworks and Backend
 
-## Stack
+* Django
+* FastAPI
+* REST APIs
+* Next.js
+* JWT Authentication
+* OTP Authentication
+* Session Management
 
-- [Next.js 16](https://nextjs.org) — App Router
-- [React 19](https://react.dev)
-- [Tailwind CSS v4](https://tailwindcss.com)
-- TypeScript
+### Libraries
+
+* TensorFlow
+* OpenCV
+* Scikit-learn
+* Pandas
+* NumPy
+* Matplotlib
+
+### Blockchain
+
+* Ethereum
+* Solidity
+* Hardhat
+* Ethers.js
+* IPFS
+* Smart Contracts
+* SHA-256 Cryptographic Hashing
+
+### Extended Reality
+
+* Extended Reality
+* Augmented Reality
+* 3D Scene Graph Generation
+* Semantic Scene Generation
+* Scientific Knowledge Visualization
+* Adaptive Learning Systems
+
+### Databases and Tools
+
+* PostgreSQL
+* Git
+* GitHub
+* Linux
+* Jupyter Notebook
+* Google Colab
+* VS Code
+* Postman
+
+## Experience
+
+### Research Intern — IIIT Naya Raipur
+
+**January 2026 – Present**
+
+* Conducting research on AI-driven wireless communication systems, intelligent networking, and multimodal machine learning.
+* Developing end-to-end machine learning pipelines involving preprocessing, feature engineering, model training, hyperparameter optimization, and evaluation.
+* Implementing deep learning, graph neural network, and reinforcement learning models for wireless communication applications.
+* Contributing to research publications through literature review, experimental design, quantitative analysis, and manuscript preparation.
+
+### Software Developer Intern — Cypwng, Hyderabad
+
+**January 2025 – June 2025**
+
+* Developed backend modules for loan origination, approval workflows, repayment tracking, and status management using Django and PostgreSQL.
+* Implemented OTP-based authentication, role-based access control, and session management.
+* Designed RESTful APIs for integration with a Next.js frontend.
+* Built EMI calculation and repayment scheduling services supporting multiple loan products.
+
+## Featured Projects
+
+### ArchViz-XR
+
+**AI-Powered Extended Reality Framework for Scientific Knowledge Visualization**
+
+An AI-driven framework that transforms scientific diagrams and research content into immersive 3D augmented reality experiences.
+
+**Technologies:** Python, NLP, Computer Vision, Multimodal AI, XR, Scene Graph Generation
+
+* Designed a semantic-to-spatial pipeline for converting research diagrams into interactive 3D environments.
+* Developed modules for entity extraction, relationship reasoning, spatial scene construction, and adaptive content generation.
+* Integrated AI-generated explanations and voice interaction for immersive scientific learning.
+
+### GNN-DRL & GNN-SPN
+
+**AI-Based Resource Allocation for V2X Networks**
+
+A graph-learning-based approach for dynamic radio resource allocation in high-mobility V2X communication networks.
+
+**Technologies:** Python, TensorFlow, GNN, Deep Reinforcement Learning, Wireless Networks
+
+* Implemented GNN-based reinforcement learning approaches for dynamic resource allocation.
+* Evaluated throughput, latency, interference management, packet delivery ratio, and reliability.
+* Compared graph-based approaches with conventional reinforcement learning methods.
+
+### EduChain
+
+**Decentralised Academic Credential Verification Platform**
+
+A blockchain-based platform for secure academic certificate issuance, verification, and revocation.
+
+**Technologies:** Ethereum, Solidity, FastAPI, Next.js, Ethers.js, IPFS, SHA-256
+
+* Developed Ethereum smart contracts for academic credential management.
+* Integrated IPFS and SHA-256 hashing for tamper-evident document storage.
+* Built a FastAPI backend and wallet-authenticated Next.js frontend.
+
+### LendFundz
+
+**Financial Management System**
+
+A fintech platform for managing the complete loan lifecycle.
+
+**Technologies:** Django, PostgreSQL, REST APIs, Next.js, OTP Authentication
+
+* Developed loan approval, repayment, EMI computation, and tracking modules.
+* Designed normalized PostgreSQL schemas and secure REST APIs.
+* Implemented authentication and role-based access control.
+
+### ParkEase
+
+**Real-Time Smart Parking Allocation System**
+
+A computer vision-based smart parking system for detecting parking occupancy and managing reservations.
+
+**Technologies:** Python, OpenCV, Computer Vision, Backend Development
+
+* Developed real-time parking slot detection using CCTV feeds.
+* Implemented automated allocation and reservation management.
+* Added concurrency control to prevent duplicate bookings.
+
+### Mental Health Detector
+
+**Journal Sentiment Analysis Application**
+
+A natural language processing application for analyzing sentiment in personal journal entries.
+
+**Technologies:** Python, NLP, Machine Learning, Scikit-learn, Matplotlib
+
+* Built a supervised NLP pipeline for sentiment classification.
+* Applied text preprocessing and feature engineering.
+* Developed dashboards for longitudinal mood and behavioral trend visualization.
+
+## Education
+
+### Bachelor of Technology (Honours)
+
+**Computer Science Engineering — Data Science**
+
+Chhattisgarh Swami Vivekanand Technical University, Bhilai
+
+**2022 – 2026**
+
+## Certifications
+
+* Machine Learning with Python — IBM
+* AI & Azure AI Fundamentals — Microsoft
+* Generative AI Essentials — LinkedIn & Microsoft
+* Advanced Software Engineering — Walmart
+* Data Analytics Simulations — Accenture & Deloitte
+* Software Engineering Simulation — Wells Fargo
+
+## Portfolio
+
+**Website:** [ruthvik-portfolio-gules.vercel.app]
+
+## Connect
+
+* **GitHub:** https://github.com/ruthvikreddyv
+* **LinkedIn:** https://linkedin.com/in/ruthvikreddyv
+* **Email:** [ruthvikreddyv@gmail.com](mailto:ruthvikreddyv@gmail.com)
+
+## About This Repository
+
+This repository contains the source code for my personal portfolio website, including my research interests, technical projects, publications, professional experience, and academic background.
+
+The portfolio is intended to provide an overview of my work across artificial intelligence, machine learning, wireless communication, software engineering, extended reality, and blockchain.
+
+---
+
+If you are interested in research collaboration, software development, or PhD opportunities in AI and related fields, feel free to get in touch.
