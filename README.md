@@ -9,7 +9,6 @@ I am interested in developing intelligent systems that combine machine learning,
 Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing to research in AI-driven wireless communication systems, intelligent networking, and multimodal machine learning.
 
 ## Research Interests
-
 * Artificial Intelligence and Machine Learning
 * Graph Neural Networks
 * Deep Reinforcement Learning
@@ -26,16 +25,13 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Blockchain Applications
 
 ## Technical Skills
-
 ### Programming Languages
-
 * Python
 * C
 * C++
 * SQL
 
 ### AI and Machine Learning
-
 * Machine Learning
 * Deep Learning
 * Graph Neural Networks
@@ -47,7 +43,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Hyperparameter Optimization
 
 ### Frameworks and Backend
-
 * Django
 * FastAPI
 * REST APIs
@@ -57,7 +52,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Session Management
 
 ### Libraries
-
 * TensorFlow
 * OpenCV
 * Scikit-learn
@@ -66,7 +60,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Matplotlib
 
 ### Blockchain
-
 * Ethereum
 * Solidity
 * Hardhat
@@ -76,7 +69,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * SHA-256 Cryptographic Hashing
 
 ### Extended Reality
-
 * Extended Reality
 * Augmented Reality
 * 3D Scene Graph Generation
@@ -85,7 +77,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Adaptive Learning Systems
 
 ### Databases and Tools
-
 * PostgreSQL
 * Git
 * GitHub
@@ -96,7 +87,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Postman
 
 ## Experience
-
 ### Research Intern — IIIT Naya Raipur
 
 **January 2026 – Present**
