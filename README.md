@@ -24,6 +24,7 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * Intelligent Edge Computing
 * Blockchain Applications
 
+
 ## Technical Skills
 ### Programming Languages
 * Python
