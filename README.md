@@ -8,6 +8,7 @@ I am interested in developing intelligent systems that combine machine learning,
 
 Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing to research in AI-driven wireless communication systems, intelligent networking, and multimodal machine learning.
 
+
 ## Research Interests
 * Artificial Intelligence and Machine Learning
 * Graph Neural Networks
