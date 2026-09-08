@@ -49,7 +49,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 * FastAPI
 * REST APIs
 * Next.js
-* JWT Authentication
 * OTP Authentication
 * Session Management
 
