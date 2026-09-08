@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/Reveal";
 import { IconPin, IconCode, IconBrain, IconTarget } from "@/components/icons";
 
+
 const facts = [
   { icon: IconPin, label: "Based in", value: "Hyderabad, India" },
   { icon: IconCode, label: "Core strengths", value: "Software Engineering · AI/ML" },
