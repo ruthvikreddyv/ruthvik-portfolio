@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/Reveal";
 import { IconMail, IconPhone, IconPin, IconGithub, IconLinkedin } from "@/components/icons";
 
+
 const contactItems = [
   {
     icon: IconMail,
