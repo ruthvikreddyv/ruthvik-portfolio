@@ -2,7 +2,6 @@
 
 ## Computer Science | Artificial Intelligence | Machine Learning | Research
 
-
 I am a Computer Science Engineering (Data Science) graduate with research and software development experience in Artificial Intelligence, Machine Learning, Computer Vision, Graph Neural Networks, Wireless Communication Systems, Extended Reality, and Blockchain.
 
 I am interested in developing intelligent systems that combine machine learning, graph learning, multimodal AI, and emerging technologies to solve real-world problems.
