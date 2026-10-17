@@ -10,7 +10,6 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 
 ## Research Interestss
 
-
 * Artificial Intelligence and Machine Learning
 * Graph Neural Networks
 * Deep Reinforcement Learning
