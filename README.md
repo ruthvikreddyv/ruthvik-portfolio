@@ -1,5 +1,6 @@
 # Ruthvik Reddy Veerannagari
 
+
 ## Computer Science | Artificial Intelligence | Machine Learning | Research
 
 I am a Computer Science Engineering (Data Science) graduate with research and software development experience in Artificial Intelligence, Machine Learning, Computer Vision, Graph Neural Networks, Wireless Communication Systems, Extended Reality, and Blockchain.
