@@ -13,6 +13,7 @@ Currently, I am working as a Research Intern at IIIT Naya Raipur, contributing t
 
 * Artificial Intelligence and Machine Learning
 * Graph Neural Networks
+* 
 * Deep Reinforcement Learning
 * 5G/6G Wireless Communication
 * AI for Wireless Networks
